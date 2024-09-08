@@ -309,13 +309,15 @@ This page provides an overview of key metrics and insights.
 #### Screenshot
 ![Date Slicer](path/to/date_slicer_screenshot.png)
 
-# Project Milestone 6: Executive Summary Page Enhancements
+---
 
-## Overview
+## Project Milestone 6: Executive Summary Page Enhancements
+
+### Overview
 
 In this milestone, we enhanced the Executive Summary page by adding and configuring several key visuals. The updates provide a comprehensive overview of key metrics, trends, and targets.
 
-## 1. Card Visuals
+### 1. Card Visuals
 
 - **Total Revenue, Total Orders, and Total Profit Cards:**
   - **Visuals Created:** Added three card visuals to display `Total Revenue`, `Total Orders`, and `Total Profit`.
@@ -328,7 +330,7 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
   **Screenshot of Card Visuals:**
   ![Card Visuals](path/to/card_visuals_screenshot.png)
 
-## 2. Line Chart
+### 2. Line Chart
 
 - **Revenue Over Time Line Chart:**
   - **Configuration:**
@@ -339,7 +341,7 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
   **Screenshot of Line Chart:**
   ![Line Chart](path/to/line_chart_screenshot.png)
 
-## 3. Donut Charts
+### 3. Donut Charts
 
 - **Revenue by Store Country and Store Type:**
   - **Configuration:**
@@ -350,7 +352,7 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
   **Screenshot of Donut Charts:**
   ![Donut Charts](path/to/donut_charts_screenshot.png)
 
-## 4. Bar Chart
+### 4. Bar Chart
 
 - **Orders by Product Category:**
   - **Configuration:**
@@ -361,7 +363,7 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
   **Screenshot of Bar Chart:**
   ![Bar Chart](path/to/bar_chart_screenshot.png)
 
-## 5. KPI Visuals
+### 5. KPI Visuals
 
 - **Quarterly Revenue, Orders, and Profit KPIs:**
   - **KPIs Created:**
@@ -375,7 +377,7 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
   **Screenshot of KPIs:**
   ![KPI Visuals](path/to/kpi_visuals_screenshot.png)
 
-## 6. Final Page Layout
+### 6. Final Page Layout
 
 - **Completed Layout:**
   - The Executive Summary page now includes a combination of card visuals, line chart, donut charts, bar chart, and KPIs arranged to provide a clear and insightful overview of key metrics.
@@ -383,11 +385,11 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
   **Screenshot of Completed Page:**
   ![Completed Page](path/to/completed_page_screenshot.png)
 
-## 7. Power BI File
+### 7. Power BI File
 
 - **Latest Power BI .pbix File:** [Download the latest Power BI .pbix file](path/to/PowerBI_Project_Latest.pbix)
-
-  # Power BI Report Design - Milestones 7 through 12
+  
+---
 
 ## Milestone 7: Adding KPI Gauges
 
@@ -456,7 +458,7 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
 
 ---
 
-## Adding Filter State Cards
+### Adding Filter State Cards
 
 1. **Add Placeholder Shapes:**
    - Insert two rectangles to the left of the gauges, matching the size of one gauge.
@@ -479,7 +481,7 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
 
 ---
 
-## Adding an Area Chart
+### Adding an Area Chart
 
 1. **Insert Area Chart:**
    - Go to the `Insert` tab.
@@ -495,7 +497,7 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
 
 ---
 
-## Adding a Top 10 Products Table
+### Adding a Top 10 Products Table
 
 1. **Copy Existing Table:**
    - Duplicate the top customer table from the Customer Detail page.
@@ -512,7 +514,7 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
 
 ---
 
-## Creating a Scatter Chart for Product Performance
+### Creating a Scatter Chart for Product Performance
 
 1. **Add a Calculated Column:**
    - **Profit per Item:**
@@ -532,7 +534,7 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
 
 ---
 
-## Creating a Pop-Out Slicer Toolbar
+### Creating a Pop-Out Slicer Toolbar
 
 1. **Add Filter Button:**
    - Insert a blank button.
@@ -569,12 +571,12 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
 
 By following these milestones, you will have a well-organized and interactive Power BI report, providing clear insights and a professional user experience.
 
-# Milestone 8:
+---
 
-## Overview
+## Milestone 8:
+
+### Overview
 In this milestone, we focused on enhancing the Power BI report by adding interactive and detailed visuals for analyzing store performance. Key tasks included adding a map visual, creating a drillthrough page, and implementing a custom tooltip.
-
-## Tasks Accomplished
 
 ### 1. Stores Map Page
 - **Added Map Visual:**
@@ -631,11 +633,13 @@ In this milestone, we focused on enhancing the Power BI report by adding interac
 - **Screenshot:**
   ![Profit Tooltip](link-to-screenshot-of-profit-tooltip)
 
-## File Upload
+### File Upload
 - The latest version of the Power BI .pbix file has been saved and uploaded to the repository.
 
-## Conclusion
+### Conclusion
 This milestone enhances the interactivity and detail of the Power BI report, providing better insights into store performance and progress.
+
+---
 
 ## Milestone 9:
 
