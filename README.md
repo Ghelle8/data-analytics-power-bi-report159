@@ -1,4 +1,4 @@
-# data-analytics-power-bi-report159
+# Data Analytics Power BI Report
 
 ## Project Milestone 2: Data Import and Transformation in Power BI
 
@@ -568,4 +568,131 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
 ---
 
 By following these milestones, you will have a well-organized and interactive Power BI report, providing clear insights and a professional user experience.
+
+# Milestone 8:
+
+## Overview
+In this milestone, we focused on enhancing the Power BI report by adding interactive and detailed visuals for analyzing store performance. Key tasks included adding a map visual, creating a drillthrough page, and implementing a custom tooltip.
+
+## Tasks Accomplished
+
+### 1. Stores Map Page
+- **Added Map Visual:**
+  - The map visual was added to the "Stores Map" page, occupying the majority of the page.
+  - Configured map settings:
+    - Auto-Zoom: On
+    - Zoom buttons: Off
+    - Lasso button: Off
+  - Set the Location field to the Geography hierarchy and the Bubble size field to ProfitYTD.
+
+- **Added Slicer:**
+  - Positioned a slicer above the map for selecting countries.
+  - Configured the slicer:
+    - Field: Stores[Country]
+    - Style: Tile
+    - Selection settings: Multi-select with Ctrl/Cmd and Show "Select All".
+
+- **Visual Configuration:**
+  - Set the map visual style and ensured that Show Labels was set to On.
+
+- **Screenshot:**
+  ![Stores Map Page](link-to-screenshot-of-stores-map-page)
+
+### 2. Drillthrough Page: Stores Drillthrough
+- **Page Creation:**
+  - Created a new page named "Stores Drillthrough".
+  - Set Page type to Drillthrough and configured drillthrough settings.
+
+- **Visuals Added:**
+  - **Top 5 Products Table:**
+    - Columns: Description, Profit YTD, Total Orders, Total Revenue.
+  - **Column Chart:**
+    - Displayed Total Orders by product category for the store.
+  - **Gauges:**
+    - Showed Profit YTD against a profit target of 20% year-on-year growth.
+  - **Card Visual:**
+    - Displayed the currently selected store.
+
+- **Measures Created:**
+  - Profit YTD and Revenue YTD
+  - Profit Goal and Revenue Goal (20% increase on the previous year’s YTD)
+
+- **Screenshot:**
+  ![Stores Drillthrough Page](link-to-screenshot-of-stores-drillthrough-page)
+
+### 3. Custom Tooltip Page
+- **Tooltip Page Creation:**
+  - Created a new page named "Profit Tooltip".
+  - Set the page size to Tooltip and added a gauge visual for Profit YTD against the target.
+
+- **Tooltip Configuration:**
+  - Set the tooltip of the map visual to display the "Profit Tooltip" page on hover.
+
+- **Screenshot:**
+  ![Profit Tooltip](link-to-screenshot-of-profit-tooltip)
+
+## File Upload
+- The latest version of the Power BI .pbix file has been saved and uploaded to the repository.
+
+## Conclusion
+This milestone enhances the interactivity and detail of the Power BI report, providing better insights into store performance and progress.
+
+## Milestone 9:
+
+### Visual Cross-Filtering Interactions
+
+In this milestone, the following visual cross-filtering interactions were configured:
+
+1. **Executive Summary Page**
+   - **Product Category Bar Chart**: Configured not to filter the Card visuals or KPIs.
+   - **Top 10 Products Table**: Configured not to filter the Card visuals or KPIs.
+
+2. **Customer Detail Page**
+   - **Top 20 Customers Table**: Configured not to filter any other visuals.
+   - **Total Customers by Product Donut Chart**: Configured not to affect the Customers Line Graph.
+   - **Total Customers by Country Donut Chart**: Configured to cross-filter the Total Customers by Product Donut Chart.
+
+3. **Product Detail Page**
+   - **Orders vs. Profitability Scatter Graph**: Configured not to affect any other visuals.
+   - **Top 10 Products Table**: Configured not to affect any other visuals.
+
+### Navigation Buttons Setup
+
+Custom navigation buttons were added to each report page to facilitate easy navigation between pages. The following steps were undertaken:
+
+1. **Button Creation and Configuration:**
+   - Added blank buttons to the sidebar of each report page.
+   - Configured each button to use custom icons:
+     - **Default Icon**: White version of the icon.
+     - **On Hover Icon**: Cyan version of the icon.
+   - Enabled button actions for page navigation, linking to the respective report pages.
+
+2. **Grouping and Copying Buttons:**
+   - Grouped buttons on the Executive Summary Page.
+   - Copied and pasted the grouped buttons to other report pages, ensuring consistent placement and functionality across the report.
+
+### Screenshots
+
+**Executive Summary Page:**
+![Executive Summary Page Screenshot](link-to-screenshot-of-executive-summary-page)
+
+**Customer Detail Page:**
+![Customer Detail Page Screenshot](link-to-screenshot-of-customer-detail-page)
+
+**Product Detail Page:**
+![Product Detail Page Screenshot](link-to-screenshot-of-product-detail-page)
+
+**Navigation Buttons Configuration:**
+![Navigation Buttons Screenshot](link-to-screenshot-of-navigation-buttons)
+
+## Latest Power BI File
+
+The latest version of the Power BI .pbix file has been saved and uploaded to the repository. You can download it from the [repository's releases section](link-to-latest-pbix-file).
+
+## Conclusion
+
+The above updates enhance the interactivity and usability of the report, providing users with seamless navigation and well-configured visual interactions. 
+
+For further details or assistance, feel free to reach out or refer to the project documentation.
+
 
