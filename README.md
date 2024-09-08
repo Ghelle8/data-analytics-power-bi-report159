@@ -309,5 +309,80 @@ This page provides an overview of key metrics and insights.
 #### Screenshot
 ![Date Slicer](path/to/date_slicer_screenshot.png)
 
-### Power BI File
-- [Download the latest Power BI .pbix file](path/to/PowerBI_Project_Latest.pbix)
+# Project Milestone 6: Executive Summary Page Enhancements
+
+## Overview
+
+In this milestone, we enhanced the Executive Summary page by adding and configuring several key visuals. The updates provide a comprehensive overview of key metrics, trends, and targets.
+
+## 1. Card Visuals
+
+- **Total Revenue, Total Orders, and Total Profit Cards:**
+  - **Visuals Created:** Added three card visuals to display `Total Revenue`, `Total Orders`, and `Total Profit`.
+  - **Formatting:**
+    - **Total Revenue:** Displayed to 2 decimal places.
+    - **Total Orders:** Displayed to 1 decimal place.
+    - **Total Profit:** Displayed to 2 decimal places.
+  - **Arrangement:** Positioned the cards to span approximately half of the page width.
+
+  **Screenshot of Card Visuals:**
+  ![Card Visuals](path/to/card_visuals_screenshot.png)
+
+## 2. Line Chart
+
+- **Revenue Over Time Line Chart:**
+  - **Configuration:**
+    - **X-Axis:** Set to `Date Hierarchy` with only `Start of Year`, `Start of Quarter`, and `Start of Month` levels displayed.
+    - **Y-Axis:** Set to `Total Revenue`.
+  - **Positioning:** Placed the line chart just below the card visuals.
+
+  **Screenshot of Line Chart:**
+  ![Line Chart](path/to/line_chart_screenshot.png)
+
+## 3. Donut Charts
+
+- **Revenue by Store Country and Store Type:**
+  - **Configuration:**
+    - **First Donut Chart:** Shows `Total Revenue` broken down by `Store[Country]`.
+    - **Second Donut Chart:** Shows `Total Revenue` broken down by `Store[Store Type]`.
+  - **Positioning:** Placed to the right of the cards along the top of the page.
+
+  **Screenshot of Donut Charts:**
+  ![Donut Charts](path/to/donut_charts_screenshot.png)
+
+## 4. Bar Chart
+
+- **Orders by Product Category:**
+  - **Configuration:**
+    - **Visual Type:** Converted from a donut chart to a clustered bar chart.
+    - **X-Axis:** Set to `Total Orders`.
+  - **Formatting:** Applied colors consistent with the report theme.
+
+  **Screenshot of Bar Chart:**
+  ![Bar Chart](path/to/bar_chart_screenshot.png)
+
+## 5. KPI Visuals
+
+- **Quarterly Revenue, Orders, and Profit KPIs:**
+  - **KPIs Created:**
+    - **Revenue KPI:** Displays `Total Revenue`, trends over `Start of Quarter`, and targets `Target Revenue`.
+    - **Profit KPI:** Displays `Total Profit`, trends over `Start of Quarter`, and targets `Target Profit`.
+    - **Orders KPI:** Displays `Total Orders`, trends over `Start of Quarter`, and targets `Target Orders`.
+  - **Formatting:**
+    - **Trend Axis:** Set to `On` with `High is Good` direction, `Red` for bad color, and `15%` transparency.
+    - **Callout Value:** Set to 1 decimal place.
+
+  **Screenshot of KPIs:**
+  ![KPI Visuals](path/to/kpi_visuals_screenshot.png)
+
+## 6. Final Page Layout
+
+- **Completed Layout:**
+  - The Executive Summary page now includes a combination of card visuals, line chart, donut charts, bar chart, and KPIs arranged to provide a clear and insightful overview of key metrics.
+
+  **Screenshot of Completed Page:**
+  ![Completed Page](path/to/completed_page_screenshot.png)
+
+## 7. Power BI File
+
+- **Latest Power BI .pbix File:** [Download the latest Power BI .pbix file](path/to/PowerBI_Project_Latest.pbix)
