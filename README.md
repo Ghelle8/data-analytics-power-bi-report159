@@ -386,3 +386,186 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
 ## 7. Power BI File
 
 - **Latest Power BI .pbix File:** [Download the latest Power BI .pbix file](path/to/PowerBI_Project_Latest.pbix)
+
+  # Power BI Report Design - Milestones 7 through 12
+
+## Milestone 7: Adding KPI Gauges
+
+**Objective:** Add a set of gauges to show current-quarter performance against targets.
+
+1. **Define DAX Measures:**
+   - **Orders Current Quarter:**
+     ```DAX
+     Orders Current Quarter = CALCULATE(SUM(Orders[Order Quantity]), QUARTER(Dates[Date]) = QUARTER(TODAY()))
+     ```
+   - **Revenue Current Quarter:**
+     ```DAX
+     Revenue Current Quarter = CALCULATE(SUM(Orders[Total Revenue]), QUARTER(Dates[Date]) = QUARTER(TODAY()))
+     ```
+   - **Profit Current Quarter:**
+     ```DAX
+     Profit Current Quarter = CALCULATE(SUM(Orders[Total Profit]), QUARTER(Dates[Date]) = QUARTER(TODAY()))
+     ```
+   - **Orders Target:**
+     ```DAX
+     Orders Target = CALCULATE([Orders Current Quarter] * 1.10)
+     ```
+   - **Revenue Target:**
+     ```DAX
+     Revenue Target = CALCULATE([Revenue Current Quarter] * 1.10)
+     ```
+   - **Profit Target:**
+     ```DAX
+     Profit Target = CALCULATE([Profit Current Quarter] * 1.10)
+     ```
+   - **Orders Gap:**
+     ```DAX
+     Orders Gap = [Orders Current Quarter] - [Orders Target]
+     ```
+   - **Revenue Gap:**
+     ```DAX
+     Revenue Gap = [Revenue Current Quarter] - [Revenue Target]
+     ```
+   - **Profit Gap:**
+     ```DAX
+     Profit Gap = [Profit Current Quarter] - [Profit Target]
+     ```
+
+2. **Create Gauges:**
+   - **Orders Gauge:**
+     - Value: `[Orders Current Quarter]`
+     - Target: `[Orders Target]`
+     - Maximum: `[Orders Target]`
+   - **Revenue Gauge:**
+     - Value: `[Revenue Current Quarter]`
+     - Target: `[Revenue Target]`
+     - Maximum: `[Revenue Target]`
+   - **Profit Gauge:**
+     - Value: `[Profit Current Quarter]`
+     - Target: `[Profit Target]`
+     - Maximum: `[Profit Target]`
+
+3. **Conditional Formatting:**
+   - **Callout Value Formatting:**
+     - Red if `[Orders Gap]` or `[Revenue Gap]` or `[Profit Gap]` is negative.
+     - Black otherwise.
+
+4. **Arrange Gauges:**
+   - Place gauges evenly along the top of the report.
+   - Leave space for card visuals displaying slicer states.
+
+---
+
+## Adding Filter State Cards
+
+1. **Add Placeholder Shapes:**
+   - Insert two rectangles to the left of the gauges, matching the size of one gauge.
+   - Use a color consistent with your report theme.
+
+2. **Define Measures for Slicer States:**
+   - **Category Selection:**
+     ```DAX
+     Category Selection = IF(ISFILTERED(Products[Category]), SELECTEDVALUE(Products[Category], "No Selection"), "No Selection")
+     ```
+   - **Country Selection:**
+     ```DAX
+     Country Selection = IF(ISFILTERED(Stores[Country]), SELECTEDVALUE(Stores[Country], "No Selection"), "No Selection")
+     ```
+
+3. **Add Card Visuals:**
+   - Insert two card visuals into the rectangles.
+   - Assign `[Category Selection]` and `[Country Selection]` to the respective cards.
+   - Format cards to be the same size as gauges and center the text.
+
+---
+
+## Adding an Area Chart
+
+1. **Insert Area Chart:**
+   - Go to the `Insert` tab.
+   - Select `Area Chart`.
+
+2. **Configure the Chart:**
+   - **X Axis:** `Dates[Start of Quarter]`
+   - **Y Axis:** `Total Revenue`
+   - **Legend:** `Products[Category]`
+
+3. **Position the Chart:**
+   - Place it to the left of the page, aligning it with the start of the second gauge.
+
+---
+
+## Adding a Top 10 Products Table
+
+1. **Copy Existing Table:**
+   - Duplicate the top customer table from the Customer Detail page.
+
+2. **Configure Table Fields:**
+   - **Product Description**
+   - **Total Revenue**
+   - **Total Customers**
+   - **Total Orders**
+   - **Profit per Order**
+
+3. **Format the Table:**
+   - Ensure the table fits neatly underneath the area chart.
+
+---
+
+## Creating a Scatter Chart for Product Performance
+
+1. **Add a Calculated Column:**
+   - **Profit per Item:**
+     ```DAX
+     Profit per Item = DIVIDE([Total Profit], [Total Quantity])
+     ```
+
+2. **Insert Scatter Chart:**
+   - Go to the `Insert` tab.
+   - Select `Scatter Chart`.
+
+3. **Configure the Chart:**
+   - **Values:** `Products[Description]`
+   - **X Axis:** `Products[Profit per Item]`
+   - **Y Axis:** `Orders[Total Quantity]`
+   - **Legend:** `Products[Category]`
+
+---
+
+## Creating a Pop-Out Slicer Toolbar
+
+1. **Add Filter Button:**
+   - Insert a blank button.
+   - Set icon type to `Custom`, upload `Filter_icon.png`, and set tooltip to "Open Slicer Panel".
+
+2. **Add Slicer Toolbar:**
+   - Insert a rectangle shape to act as the toolbar background.
+   - Resize and color it to match the navigation bar.
+
+3. **Add Slicers:**
+   - Insert two slicers for `Products[Category]` and `Stores[Country]`.
+   - Format as `Vertical List` and adjust settings for multiple selections and `Select All`.
+
+4. **Group Toolbar and Slicers:**
+   - Group the slicers and rectangle in the Selection pane.
+
+5. **Add Back Button:**
+   - Insert a `Back` button and position it in the toolbar.
+   - Group it with the toolbar and slicers.
+
+6. **Set Up Bookmarks:**
+   - **Slicer Bar Open:** Toolbar visible.
+   - **Slicer Bar Closed:** Toolbar hidden.
+   - Uncheck `Data` in bookmarks settings.
+
+7. **Assign Actions to Buttons:**
+   - Set the `Filter` button action to "Slicer Bar Open".
+   - Set the `Back` button action to "Slicer Bar Closed".
+
+8. **Test Buttons:**
+   - Use `Ctrl` + click to test button functionality.
+
+---
+
+By following these milestones, you will have a well-organized and interactive Power BI report, providing clear insights and a professional user experience.
+
