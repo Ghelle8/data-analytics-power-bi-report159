@@ -49,7 +49,7 @@ In this milestone, the focus was on importing and transforming data from various
 
 ---
 
-## Project Milestone 3
+## Project Milestone 3: Create the Data Model
 
 This Power BI project aims to build an analytical report using various data sources, such as Orders, Products, Stores, and Customers data. The goal is to model the data, create relevant measures and hierarchies, and build a star schema for effective reporting.
 
@@ -188,9 +188,7 @@ Several key measures were created using DAX formulas to provide important busine
 
 ---
 
-## Project Milestone 4
-
-### Report Pages Setup and Color Theme
+## Project Milestone 4: Report Pages Setup and Color Theme
 
 #### Steps to Create Report Pages:
 
@@ -275,9 +273,8 @@ To add a sidebar for navigation between pages:
   - A description of each report page and its purpose.
   - The color theme used and why it was chosen.
 
-## Project Milestone 5 
+## Project Milestone 5: Customer Detail Page
 
-### Executive Summary Page
 This page provides an overview of key metrics and insights.
 
 #### Visuals
@@ -295,23 +292,15 @@ This page provides an overview of key metrics and insights.
 
 - **Top Customer Card Visuals:** Highlight the top customer’s name, number of orders, and total revenue.
 
-#### Screenshots
-![Executive Summary Page](path/to/executive_summary_screenshot.png)
-![Donut Chart](path/to/donut_chart_screenshot.png)
-![Column Chart](path/to/column_chart_screenshot.png)
-![Line Chart](path/to/line_chart_screenshot.png)
-![Top Customer Table](path/to/top_customer_table_screenshot.png)
-![Top Customer Card Visuals](path/to/top_customer_card_visuals_screenshot.png)
-
 ### Date Slicer
 - Added a date slicer for filtering by year with the "Between" slicer style.
 
-#### Screenshot
-![Date Slicer](path/to/date_slicer_screenshot.png)
+#### Screenshots
+![Customer Detail Page](C:\Users\Suado\Desktop\PowerBI\Screenshots\Customer Detail Page.png)
 
 ---
 
-## Project Milestone 6: Executive Summary Page Enhancements
+## Project Milestone 6: Executive Summary Page 
 
 ### Overview
 
@@ -327,9 +316,6 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
     - **Total Profit:** Displayed to 2 decimal places.
   - **Arrangement:** Positioned the cards to span approximately half of the page width.
 
-  **Screenshot of Card Visuals:**
-  ![Card Visuals](path/to/card_visuals_screenshot.png)
-
 ### 2. Line Chart
 
 - **Revenue Over Time Line Chart:**
@@ -337,9 +323,6 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
     - **X-Axis:** Set to `Date Hierarchy` with only `Start of Year`, `Start of Quarter`, and `Start of Month` levels displayed.
     - **Y-Axis:** Set to `Total Revenue`.
   - **Positioning:** Placed the line chart just below the card visuals.
-
-  **Screenshot of Line Chart:**
-  ![Line Chart](path/to/line_chart_screenshot.png)
 
 ### 3. Donut Charts
 
@@ -349,9 +332,6 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
     - **Second Donut Chart:** Shows `Total Revenue` broken down by `Store[Store Type]`.
   - **Positioning:** Placed to the right of the cards along the top of the page.
 
-  **Screenshot of Donut Charts:**
-  ![Donut Charts](path/to/donut_charts_screenshot.png)
-
 ### 4. Bar Chart
 
 - **Orders by Product Category:**
@@ -359,9 +339,6 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
     - **Visual Type:** Converted from a donut chart to a clustered bar chart.
     - **X-Axis:** Set to `Total Orders`.
   - **Formatting:** Applied colors consistent with the report theme.
-
-  **Screenshot of Bar Chart:**
-  ![Bar Chart](path/to/bar_chart_screenshot.png)
 
 ### 5. KPI Visuals
 
@@ -374,24 +351,18 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
     - **Trend Axis:** Set to `On` with `High is Good` direction, `Red` for bad color, and `15%` transparency.
     - **Callout Value:** Set to 1 decimal place.
 
-  **Screenshot of KPIs:**
-  ![KPI Visuals](path/to/kpi_visuals_screenshot.png)
-
 ### 6. Final Page Layout
 
 - **Completed Layout:**
   - The Executive Summary page now includes a combination of card visuals, line chart, donut charts, bar chart, and KPIs arranged to provide a clear and insightful overview of key metrics.
 
   **Screenshot of Completed Page:**
-  ![Completed Page](path/to/completed_page_screenshot.png)
-
-### 7. Power BI File
-
-- **Latest Power BI .pbix File:** [Download the latest Power BI .pbix file](path/to/PowerBI_Project_Latest.pbix)
-  
+![Executive Summary Page](C:\Users\Suado\Desktop\PowerBI\Screenshots\Executive Summary Page.png)
 ---
 
-## Milestone 7: Adding KPI Gauges
+## Milestone 7: Product Detail Page
+
+### Adding KPI Gauges
 
 **Objective:** Add a set of gauges to show current-quarter performance against targets.
 
@@ -571,9 +542,11 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
 
 By following these milestones, you will have a well-organized and interactive Power BI report, providing clear insights and a professional user experience.
 
+### Screenshot
+[Product Detail Page](C:\Users\Suado\Desktop\PowerBI\Screenshots\Product Detail Page.png)
 ---
 
-## Milestone 8:
+## Milestone 8: Stores Map Page
 
 ### Overview
 In this milestone, we focused on enhancing the Power BI report by adding interactive and detailed visuals for analyzing store performance. Key tasks included adding a map visual, creating a drillthrough page, and implementing a custom tooltip.
@@ -598,7 +571,7 @@ In this milestone, we focused on enhancing the Power BI report by adding interac
   - Set the map visual style and ensured that Show Labels was set to On.
 
 - **Screenshot:**
-  ![Stores Map Page](link-to-screenshot-of-stores-map-page)
+  ![Stores Map Page](C:\Users\Suado\Desktop\PowerBI\Screenshots\Stores Map Page.png)
 
 ### 2. Drillthrough Page: Stores Drillthrough
 - **Page Creation:**
@@ -620,7 +593,7 @@ In this milestone, we focused on enhancing the Power BI report by adding interac
   - Profit Goal and Revenue Goal (20% increase on the previous year’s YTD)
 
 - **Screenshot:**
-  ![Stores Drillthrough Page](link-to-screenshot-of-stores-drillthrough-page)
+  ![Stores Drillthrough Page](C:\Users\Suado\Desktop\PowerBI\Screenshots\Stores Drillthrough Page.png)
 
 ### 3. Custom Tooltip Page
 - **Tooltip Page Creation:**
@@ -631,7 +604,7 @@ In this milestone, we focused on enhancing the Power BI report by adding interac
   - Set the tooltip of the map visual to display the "Profit Tooltip" page on hover.
 
 - **Screenshot:**
-  ![Profit Tooltip](link-to-screenshot-of-profit-tooltip)
+  ![Profit Tooltip](C:\Users\Suado\Desktop\PowerBI\Screenshots\Stores Profit Tooltip.png)
 
 ### File Upload
 - The latest version of the Power BI .pbix file has been saved and uploaded to the repository.
@@ -641,7 +614,7 @@ This milestone enhances the interactivity and detail of the Power BI report, pro
 
 ---
 
-## Milestone 9:
+## Milestone 9: Cross-Filtering and Navigation
 
 ### Visual Cross-Filtering Interactions
 
@@ -677,26 +650,207 @@ Custom navigation buttons were added to each report page to facilitate easy navi
 
 ### Screenshots
 
-**Executive Summary Page:**
-![Executive Summary Page Screenshot](link-to-screenshot-of-executive-summary-page)
-
-**Customer Detail Page:**
-![Customer Detail Page Screenshot](link-to-screenshot-of-customer-detail-page)
-
-**Product Detail Page:**
-![Product Detail Page Screenshot](link-to-screenshot-of-product-detail-page)
-
 **Navigation Buttons Configuration:**
-![Navigation Buttons Screenshot](link-to-screenshot-of-navigation-buttons)
+![Navigation Buttons Screenshot](C:\Users\Suado\Desktop\PowerBI\Screenshots\Navigation Buttons.png)
 
-## Latest Power BI File
+---
 
-The latest version of the Power BI .pbix file has been saved and uploaded to the repository. You can download it from the [repository's releases section](link-to-latest-pbix-file).
+## Milestone 10: SQL Queries and Data Analysis for Power BI Project
+# PostgreSQL Data Analysis Project
 
-## Conclusion
+## Overview
 
-The above updates enhance the interactivity and usability of the report, providing users with seamless navigation and well-configured visual interactions. 
+This project involves connecting to a PostgreSQL database hosted on Microsoft Azure, querying the database to obtain insights, and exporting the results to CSV files. The project includes setting up your environment, performing various SQL queries, and documenting the results.
 
-For further details or assistance, feel free to reach out or refer to the project documentation.
+## Setup Instructions
 
+### 1. Connect to the PostgreSQL Database
 
+To connect to the PostgreSQL database from VSCode, follow these steps:
+
+1. **Install SQLTools Extension**:
+   - Open [Visual Studio Code](https://code.visualstudio.com/).
+   - Go to the **Extensions** tab on the left sidebar (or press `Ctrl+Shift+X`).
+   - Search for **SQLTools** in the Extensions Marketplace.
+   - Install the **SQLTools** extension.
+
+2. **Install SQLTools PostgreSQL Driver**:
+   - Press `Ctrl+Shift+P` to open the Command Palette.
+   - Type **SQLTools: Install Drivers** and select it.
+   - Choose **PostgreSQL/Redshift** from the list and install it.
+
+3. **Connect to the Database**:
+   - Click on the SQLTools icon in the Activity Bar on the left.
+   - Click **+ (Add New Connection)**.
+   - Choose **PostgreSQL/Redshift** as the driver.
+
+   Enter the following connection details:
+   - **Connection Name**: (e.g., `Azure Postgres`)
+   - **Server**: `powerbi-data-analytics-server.postgres.database.azure.com`
+   - **Port**: `5432`
+   - **Database**: `postgres`
+   - **Username**: `maya`
+   - **Password**: `AiCore127!`
+   - **SSL**: Enable SSL encryption.
+
+4. **Test and Save the Connection**:
+   - Click **Test Connection** to verify the details.
+   - If successful, click **Save**.
+
+   If you encounter issues, click [here to book a call with a support engineer](#).
+
+## Data Extraction and Analysis
+
+### 2. List All Tables and Columns
+
+1. **Print List of Tables**:
+   - Run the following SQL query to list all tables:
+     ```sql
+     SELECT table_name
+     FROM information_schema.tables
+     WHERE table_schema = 'public';
+     ```
+   - Save the results to a CSV file named `tables_list.csv`.
+
+2. **Print Columns for Each Table**:
+   - To get columns for the `orders` table:
+     ```sql
+     SELECT column_name
+     FROM information_schema.columns
+     WHERE table_name = 'orders';
+     ```
+   - Save the results to a CSV file named `orders_columns.csv`.
+
+   - For all tables, run:
+     ```sql
+     SELECT table_name, column_name
+     FROM information_schema.columns
+     WHERE table_schema = 'public'
+     ORDER BY table_name, ordinal_position;
+     ```
+   - Save the results to separate CSV files named after each table (e.g., `table_name_columns.csv`).
+
+   If you need help, click [here to book a call with a support engineer](#).
+
+### 3. SQL Queries for Data Analysis
+
+1. **How Many Staff Are There in All of the UK Stores?**
+   - **SQL Query**:
+     ```sql
+     SELECT SUM(CAST("staff numbers" AS INTEGER)) AS total_staff
+FROM dim_stores
+WHERE "country_code" = 'GB'
+AND "staff numbers" IS NOT NULL;
+     ```
+   - **Export Result**: Save the result to `question_1.csv`.
+   - **Save Query**: Save the query to `question_1.sql`.
+
+2. **Which Month in 2022 Had the Highest Revenue?**
+   - **SQL Query**:
+     ```sql
+   SELECT 
+    DATE_TRUNC('month', "Order Date"::DATE) AS month,  -- Truncate to month, cast to DATE if necessary
+    COUNT(*) AS total_revenue                          -- Use COUNT as a proxy if revenue column is missing
+FROM orders_powerbi
+WHERE EXTRACT(YEAR FROM "Order Date"::DATE) = 2022   -- Extract the year, cast to DATE if necessary
+GROUP BY month
+ORDER BY total_revenue DESC
+LIMIT 1;
+     ```
+   - **Export Result**: Save the result to `question_2.csv`.
+   - **Save Query**: Save the query to `question_2.sql`.
+
+3. **Which German Store Type Had the Highest Revenue for 2022?**
+   - **SQL Query**:
+     ```sql
+   -- Query to find the German store type with the highest revenue for 2022
+SELECT
+    ds.store_type,
+    SUM(ss.total_sales) AS total_revenue
+FROM store_sales_summary ss
+JOIN dim_stores ds
+    ON ds.store_type = ss.store_type  -- Join on store_type
+WHERE ds.country_code = 'DE'  -- Filter for Germany
+  AND ds.date_opened BETWEEN '2022-01-01' AND '2022-12-31'  -- Adjust if date_opened is in dim_stores
+GROUP BY ds.store_type
+ORDER BY total_revenue DESC
+LIMIT 1;
+     ```
+   - **Export Result**: Save the result to `question_3.csv`.
+   - **Save Query**: Save the query to `question_3.sql`.
+
+4. **Create a View for Store Sales Summary**
+   - **SQL Query**:
+     ```sql
+    CREATE VIEW store_type_summary AS
+WITH total_sales_summary AS (
+    SELECT
+        store_type,
+        SUM(total_sales) AS total_sales,
+        COUNT(*) AS orders_count
+    FROM store_sales_summary
+    GROUP BY store_type
+),
+overall_totals AS (
+    SELECT
+        SUM(total_sales) AS total_sales
+    FROM store_sales_summary
+)
+SELECT
+    t.store_type,
+    t.total_sales,
+    (t.total_sales / o.total_sales) * 100 AS pct_total_sales,
+    t.orders_count
+FROM total_sales_summary t
+JOIN overall_totals o
+ON true;
+     ```
+   - **Save Query**: Save the view creation statement to `question_4.sql`.
+
+5. **Which Product Category Generated the Most Profit for the "Wiltshire, UK" Region in 2021?**
+   - **SQL Query**:
+     ```sql
+- Query to find the product category with the most profit in Wiltshire, UK for 2021
+SELECT 
+    p.category AS product_category,
+    SUM(
+        (op."Product Quantity" * p.sale_price) - (op."Product Quantity" * p.cost_price)
+    ) AS total_profit
+FROM 
+    orders_powerbi op
+JOIN 
+    dim_products p
+    ON op."product_code" = p."product_code"
+JOIN 
+    dim_stores ds
+    ON op."Store Code" = ds."store code"
+WHERE 
+    ds.country_region = 'Wiltshire' 
+    AND ds.country_code = 'GB'
+    AND EXTRACT(YEAR FROM TO_DATE(op."Order Date", 'YYYY-MM-DD')) = 2021
+GROUP BY 
+    p.category
+ORDER BY 
+    total_profit DESC
+LIMIT 1;
+     ```
+   - **Export Result**: Save the result to `question_5.csv`.
+   - **Save Query**: Save the query to `question_5.sql`.
+
+## Files Included
+
+- **CSV Files**:
+  - `tables_names.csv`: List of all tables in the database.
+  - `orders_columns.csv`: Columns in the `orders` table.
+  - `question_1.csv`: Result for the number of staff in UK stores.
+  - `question_2.csv`: Result for the highest revenue month in 2022.
+  - `question_3.csv`: Result for the highest revenue German store type for 2022.
+  - 'question_4.csv' : Result for creating the store sales summary view
+  - `question_5.csv`: Result for the most profitable product category in Wiltshire, UK for 2021.
+
+- **SQL Files**:
+  - `question_1.sql`: SQL query for the number of staff in UK stores.
+  - `question_2.sql`: SQL query for the highest revenue month in 2022.
+  - `question_3.sql`: SQL query for the highest revenue German store type for 2022.
+  - `question_4.sql`: SQL query for creating the store sales summary view.
+  - `question_5.sql`: SQL query for the most profitable product category in Wiltshire, UK for 2021.
