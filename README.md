@@ -295,9 +295,6 @@ This page provides an overview of key metrics and insights.
 ### Date Slicer
 - Added a date slicer for filtering by year with the "Between" slicer style.
 
-#### Screenshots
-![Customer Detail Page](C:\Users\Suado\Desktop\PowerBI\Screenshots\Customer Detail Page.png)
-
 ---
 
 ## Project Milestone 6: Executive Summary Page 
@@ -355,9 +352,7 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
 
 - **Completed Layout:**
   - The Executive Summary page now includes a combination of card visuals, line chart, donut charts, bar chart, and KPIs arranged to provide a clear and insightful overview of key metrics.
-
-  **Screenshot of Completed Page:**
-![Executive Summary Page](C:\Users\Suado\Desktop\PowerBI\Screenshots\Executive Summary Page.png)
+  - 
 ---
 
 ## Milestone 7: Product Detail Page
@@ -542,8 +537,6 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
 
 By following these milestones, you will have a well-organized and interactive Power BI report, providing clear insights and a professional user experience.
 
-### Screenshot
-[Product Detail Page](C:\Users\Suado\Desktop\PowerBI\Screenshots\Product Detail Page.png)
 ---
 
 ## Milestone 8: Stores Map Page
@@ -570,9 +563,6 @@ In this milestone, we focused on enhancing the Power BI report by adding interac
 - **Visual Configuration:**
   - Set the map visual style and ensured that Show Labels was set to On.
 
-- **Screenshot:**
-  ![Stores Map Page](C:\Users\Suado\Desktop\PowerBI\Screenshots\Stores Map Page.png)
-
 ### 2. Drillthrough Page: Stores Drillthrough
 - **Page Creation:**
   - Created a new page named "Stores Drillthrough".
@@ -592,9 +582,6 @@ In this milestone, we focused on enhancing the Power BI report by adding interac
   - Profit YTD and Revenue YTD
   - Profit Goal and Revenue Goal (20% increase on the previous year’s YTD)
 
-- **Screenshot:**
-  ![Stores Drillthrough Page](C:\Users\Suado\Desktop\PowerBI\Screenshots\Stores Drillthrough Page.png)
-
 ### 3. Custom Tooltip Page
 - **Tooltip Page Creation:**
   - Created a new page named "Profit Tooltip".
@@ -602,9 +589,6 @@ In this milestone, we focused on enhancing the Power BI report by adding interac
 
 - **Tooltip Configuration:**
   - Set the tooltip of the map visual to display the "Profit Tooltip" page on hover.
-
-- **Screenshot:**
-  ![Profit Tooltip](C:\Users\Suado\Desktop\PowerBI\Screenshots\Stores Profit Tooltip.png)
 
 ### File Upload
 - The latest version of the Power BI .pbix file has been saved and uploaded to the repository.
@@ -647,11 +631,6 @@ Custom navigation buttons were added to each report page to facilitate easy navi
 2. **Grouping and Copying Buttons:**
    - Grouped buttons on the Executive Summary Page.
    - Copied and pasted the grouped buttons to other report pages, ensuring consistent placement and functionality across the report.
-
-### Screenshots
-
-**Navigation Buttons Configuration:**
-![Navigation Buttons Screenshot](C:\Users\Suado\Desktop\PowerBI\Screenshots\Navigation Buttons.png)
 
 ---
 
@@ -697,8 +676,6 @@ To connect to the PostgreSQL database from VSCode, follow these steps:
    - Click **Test Connection** to verify the details.
    - If successful, click **Save**.
 
-   If you encounter issues, click [here to book a call with a support engineer](#).
-
 ## Data Extraction and Analysis
 
 ### 2. List All Tables and Columns
@@ -729,9 +706,7 @@ To connect to the PostgreSQL database from VSCode, follow these steps:
      ORDER BY table_name, ordinal_position;
      ```
    - Save the results to separate CSV files named after each table (e.g., `table_name_columns.csv`).
-
-   If you need help, click [here to book a call with a support engineer](#).
-
+     
 ### 3. SQL Queries for Data Analysis
 
 1. **How Many Staff Are There in All of the UK Stores?**
