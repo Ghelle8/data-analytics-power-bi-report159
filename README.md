@@ -1,4 +1,9 @@
 # Data Analytics Power BI Report
+This Power BI project aims to deliver a comprehensive data analysis solution, utilizing multiple data sources to provide insights into key business metrics such as sales performance and profitability. The primary focus of the project is to empower business stakeholders with interactive and dynamic dashboards that allow them to monitor real-time performance and make data-driven decisions.
+
+The project incorporates data from multiple sources, including Azure SQL databases and CSV files and applies a range of data transformation techniques. Key deliverables include the creation of a star schema, the development of custom DAX measures, and the design of intuitive visualizations that effectively communicate key trends and patterns across regions, products, and customer segments.
+
+By using Power BI’s robust data modeling and visualization capabilities, this project highlights how businesses can uncover valuable insights and optimize their operations for growth and success. The report provides drill-through functionality, time-based analysis, and KPIs to monitor progress against set targets.
 
 ## Project Milestone 2: Data Import and Transformation in Power BI
 
