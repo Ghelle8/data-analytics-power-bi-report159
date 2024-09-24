@@ -295,7 +295,7 @@ This page provides an overview of key metrics and insights.
 
 ### Date Slicer
 - Added a date slicer for filtering by year with the "Between" slicer style.
-- 
+
 ![Customer Detail Page](https://github.com/user-attachments/assets/fcf443a9-c840-45dc-890d-f0129247b943)
 
 ---
