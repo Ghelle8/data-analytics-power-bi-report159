@@ -1,10 +1,6 @@
 # Data Analytics Power BI Report
 This Power BI project aims to deliver a comprehensive data analysis solution, utilizing multiple data sources to provide insights into key business metrics such as sales performance and profitability. The primary focus of the project is to empower business stakeholders with interactive and dynamic dashboards that allow them to monitor real-time performance and make data-driven decisions.
 
-The project incorporates data from multiple sources, including Azure SQL databases and CSV files and applies a range of data transformation techniques. Key deliverables include the creation of a star schema, the development of custom DAX measures, and the design of intuitive visualizations that effectively communicate key trends and patterns across regions, products, and customer segments.
-
-By using Power BI’s robust data modeling and visualization capabilities, this project highlights how businesses can uncover valuable insights and optimize their operations for growth and success. The report provides drill-through functionality, time-based analysis, and KPIs to monitor progress against set targets.
-
 ## Project Milestone 2: Data Import and Transformation in Power BI
 
 ### Overview
@@ -299,6 +295,8 @@ This page provides an overview of key metrics and insights.
 
 ### Date Slicer
 - Added a date slicer for filtering by year with the "Between" slicer style.
+- 
+![Customer Detail Page](https://github.com/user-attachments/assets/fcf443a9-c840-45dc-890d-f0129247b943)
 
 ---
 
@@ -357,7 +355,9 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
 
 - **Completed Layout:**
   - The Executive Summary page now includes a combination of card visuals, line chart, donut charts, bar chart, and KPIs arranged to provide a clear and insightful overview of key metrics.
-  - 
+    
+![Executive Summary Page](https://github.com/user-attachments/assets/440fd4be-daaa-4198-be48-d1606b0aee1a)
+
 ---
 
 ## Milestone 7: Product Detail Page
@@ -537,10 +537,8 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
 
 8. **Test Buttons:**
    - Use `Ctrl` + click to test button functionality.
-
----
-
-By following these milestones, you will have a well-organized and interactive Power BI report, providing clear insights and a professional user experience.
+     
+![Product Detail Page](https://github.com/user-attachments/assets/1d1c809a-04a5-446a-af90-72477d94339f)
 
 ---
 
@@ -567,6 +565,8 @@ In this milestone, we focused on enhancing the Power BI report by adding interac
 
 - **Visual Configuration:**
   - Set the map visual style and ensured that Show Labels was set to On.
+    
+![Stores Map Page](https://github.com/user-attachments/assets/067bb024-2dc3-40f2-8539-51f3dc11c068)
 
 ### 2. Drillthrough Page: Stores Drillthrough
 - **Page Creation:**
@@ -586,6 +586,8 @@ In this milestone, we focused on enhancing the Power BI report by adding interac
 - **Measures Created:**
   - Profit YTD and Revenue YTD
   - Profit Goal and Revenue Goal (20% increase on the previous year’s YTD)
+    
+![Stores Drillthrough Page](https://github.com/user-attachments/assets/97e6c6c3-73f0-41e6-8a7a-2a3467740187)
 
 ### 3. Custom Tooltip Page
 - **Tooltip Page Creation:**
@@ -600,6 +602,8 @@ In this milestone, we focused on enhancing the Power BI report by adding interac
 
 ### Conclusion
 This milestone enhances the interactivity and detail of the Power BI report, providing better insights into store performance and progress.
+
+![Stores Profit Tooltip](https://github.com/user-attachments/assets/b2b9d1c6-7099-4588-a4a4-c89915afd305)
 
 ---
 
@@ -636,6 +640,8 @@ Custom navigation buttons were added to each report page to facilitate easy navi
 2. **Grouping and Copying Buttons:**
    - Grouped buttons on the Executive Summary Page.
    - Copied and pasted the grouped buttons to other report pages, ensuring consistent placement and functionality across the report.
+     
+![Navigation Buttons](https://github.com/user-attachments/assets/62d58110-e586-439f-a63d-970389b918b5)
 
 ---
 
