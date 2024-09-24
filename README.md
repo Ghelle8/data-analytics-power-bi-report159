@@ -7,12 +7,6 @@ This Power BI project aims to deliver a comprehensive data analysis solution, ut
 In this milestone, the focus was on importing and transforming data from various sources into Power BI for analysis and reporting. The tasks completed include:
 
 ### 1. Importing the Orders Table:
-- **Source:** Azure SQL Database
-- **Credentials:**
-  - **Server Name:** aicore-devops-project-server.database.windows.net
-  - **Database Name:** powerbi-orders-db
-  - **Username:** maya
-  - **Password:** AiCore1237
 - **Process:**
   - Used the "Database" connector option in Power BI to connect to the Azure SQL Database.
   - Imported the `orders_powerbi` table.
