@@ -1,5 +1,49 @@
 # Data Analytics Power BI Report
+
+## Table Of Contents
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Milestones](#milestones)
+   - [Milestone 2](#milestone-2)
+   - [Milestone 3](#milestone-3)
+   - [Milestone 4](#milestone-4)
+   - [Milestone 5](#milestone-5)
+   - [Milestone 6](#milestone-6)
+   - [Milestone 7](#milestone-7)
+   - [Milestone 8](#milestone-8)
+   - [Milestone 9](#milestone-9)
+   - [Milestone 10](#milestone-10)
+4. [File Structure](#file-structure)
+5. [License](#license)
+
+## Description
 This Power BI project aims to deliver a comprehensive data analysis solution, utilizing multiple data sources to provide insights into key business metrics such as sales performance and profitability. The primary focus of the project is to empower business stakeholders with interactive and dynamic dashboards that allow them to monitor real-time performance and make data-driven decisions.
+
+## Installation
+
+This project requires the PowerBI application to be installed and also the SQLTools Extension for SQL query analysis.
+
+1. **Install SQLTools Extension**:
+   - Open [Visual Studio Code](https://code.visualstudio.com/).
+   - Go to the **Extensions** tab on the left sidebar (or press `Ctrl+Shift+X`).
+   - Search for **SQLTools** in the Extensions Marketplace.
+   - Install the **SQLTools** extension.
+
+2. **Install SQLTools PostgreSQL Driver**:
+   - Press `Ctrl+Shift+P` to open the Command Palette.
+   - Type **SQLTools: Install Drivers** and select it.
+   - Choose **PostgreSQL/Redshift** from the list and install it.
+
+3. **Connect to the Database**:
+   - Click on the SQLTools icon in the Activity Bar on the left.
+   - Click **+ (Add New Connection)**.
+   - Choose **PostgreSQL/Redshift** as the driver.
+
+4. **Test and Save the Connection**:
+   - Click **Test Connection** to verify the details.
+   - If successful, click **Save**.
+
+## Milestones
 
 ## Project Milestone 2: Data Import and Transformation in Power BI
 
@@ -24,11 +68,7 @@ In this milestone, the focus was on importing and transforming data from various
   - Renamed columns to match Power BI naming conventions for consistency.
 
 ### 3. Importing the Stores Table:
-- **Source:** Azure Blob Storage
-- **Credentials:**
-  - **Account Name:** powerbistorage4776
-  - **Account Key:** 96jZrwqCC6QkbuWE2SNB+PaDjwNf4ZJitYbFr/wD5CY1zIKh1FE296tDMBKjHOurQU74rPNkVuKJ+ASt/yAsiA==
-  - **Container Name:** data-analytics
+- Get the credentials required to import the stores table.
 - **Process:**
   - Connected to Azure Blob Storage using the "Get Data" option in Power BI.
   - Imported the Stores table.
@@ -90,24 +130,6 @@ A continuous date table was created to allow for time intelligence functions in 
     - Start of Quarter
     - Start of Month
     - Start of Week
-
-- **DAX for Date Table:**
-
-    ```DAX
-    Date = 
-    ADDCOLUMNS(
-        CALENDAR(MIN(Orders[Order Date]), MAX(Orders[Shipping Date])),
-        "Day of Week", WEEKDAY([Date]),
-        "Month Number", MONTH([Date]),
-        "Month Name", FORMAT([Date], "MMMM"),
-        "Quarter", QUARTER([Date]),
-        "Year", YEAR([Date]),
-        "Start of Year", DATE(YEAR([Date]), 1, 1),
-        "Start of Quarter", STARTOFQUARTER([Date]),
-        "Start of Month", EOMONTH([Date], -1) + 1,
-        "Start of Week", [Date] - WEEKDAY([Date], 2) + 1
-    )
-    ```
 
 ### 3. Creating Relationships (Star Schema)
 Relationships were established between tables to form a star schema.
@@ -221,10 +243,7 @@ To maintain consistency and clarity across all pages, choose and apply a predefi
 - **Steps to Apply a Theme:**
   - In Power BI Desktop, go to the Ribbon.
   - Click on the View tab.
-  - Under Themes, browse and select one of Power BI's predefined themes:
-    - Light: Provides a clean, professional look.
-    - Solar: Provides a modern, vibrant look with brighter colors.
-    - Executive: Has more muted, professional tones, suitable for business reports.
+  - Under Themes, browse and select one of Power BI's predefined themes.
   - Explore more themes by clicking Browse for themes, or customize your own theme by choosing specific colors for charts and visuals.
 
 - **Report Customization:**
@@ -261,12 +280,6 @@ To add a sidebar for navigation between pages:
      - Use Ctrl + V (Cmd + V on Mac) to paste the rectangle in the exact position.
    - **Align Consistently:**
      - Ensure the rectangle is aligned similarly on all pages to maintain a consistent layout.
-
-### Upload and Document:
-- Save the updated Power BI file (.pbix) and upload it to your GitHub repository.
-- Document in the README file:
-  - A description of each report page and its purpose.
-  - The color theme used and why it was chosen.
 
 ## Project Milestone 5: Customer Detail Page
 
@@ -346,9 +359,6 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
     - **Callout Value:** Set to 1 decimal place.
 
 ### 6. Final Page Layout
-
-- **Completed Layout:**
-  - The Executive Summary page now includes a combination of card visuals, line chart, donut charts, bar chart, and KPIs arranged to provide a clear and insightful overview of key metrics.
     
 ![Executive Summary Page](https://github.com/user-attachments/assets/440fd4be-daaa-4198-be48-d1606b0aee1a)
 
@@ -421,8 +431,6 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
    - Place gauges evenly along the top of the report.
    - Leave space for card visuals displaying slicer states.
 
----
-
 ### Adding Filter State Cards
 
 1. **Add Placeholder Shapes:**
@@ -444,8 +452,6 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
    - Assign `[Category Selection]` and `[Country Selection]` to the respective cards.
    - Format cards to be the same size as gauges and center the text.
 
----
-
 ### Adding an Area Chart
 
 1. **Insert Area Chart:**
@@ -460,24 +466,16 @@ In this milestone, we enhanced the Executive Summary page by adding and configur
 3. **Position the Chart:**
    - Place it to the left of the page, aligning it with the start of the second gauge.
 
----
-
 ### Adding a Top 10 Products Table
 
-1. **Copy Existing Table:**
-   - Duplicate the top customer table from the Customer Detail page.
-
-2. **Configure Table Fields:**
+   **Configure Table Fields:**
    - **Product Description**
    - **Total Revenue**
    - **Total Customers**
    - **Total Orders**
    - **Profit per Order**
-
-3. **Format the Table:**
+   **Format the Table:**
    - Ensure the table fits neatly underneath the area chart.
-
----
 
 ### Creating a Scatter Chart for Product Performance
 
@@ -646,44 +644,7 @@ Custom navigation buttons were added to each report page to facilitate easy navi
 
 This project involves connecting to a PostgreSQL database hosted on Microsoft Azure, querying the database to obtain insights, and exporting the results to CSV files. The project includes setting up your environment, performing various SQL queries, and documenting the results.
 
-## Setup Instructions
-
-### 1. Connect to the PostgreSQL Database
-
-To connect to the PostgreSQL database from VSCode, follow these steps:
-
-1. **Install SQLTools Extension**:
-   - Open [Visual Studio Code](https://code.visualstudio.com/).
-   - Go to the **Extensions** tab on the left sidebar (or press `Ctrl+Shift+X`).
-   - Search for **SQLTools** in the Extensions Marketplace.
-   - Install the **SQLTools** extension.
-
-2. **Install SQLTools PostgreSQL Driver**:
-   - Press `Ctrl+Shift+P` to open the Command Palette.
-   - Type **SQLTools: Install Drivers** and select it.
-   - Choose **PostgreSQL/Redshift** from the list and install it.
-
-3. **Connect to the Database**:
-   - Click on the SQLTools icon in the Activity Bar on the left.
-   - Click **+ (Add New Connection)**.
-   - Choose **PostgreSQL/Redshift** as the driver.
-
-   Enter the following connection details:
-   - **Connection Name**: (e.g., `Azure Postgres`)
-   - **Server**: `powerbi-data-analytics-server.postgres.database.azure.com`
-   - **Port**: `5432`
-   - **Database**: `postgres`
-   - **Username**: `maya`
-   - **Password**: `AiCore127!`
-   - **SSL**: Enable SSL encryption.
-
-4. **Test and Save the Connection**:
-   - Click **Test Connection** to verify the details.
-   - If successful, click **Save**.
-
-## Data Extraction and Analysis
-
-### 2. List All Tables and Columns
+### 1. List All Tables and Columns
 
 1. **Print List of Tables**:
    - Run the following SQL query to list all tables:
@@ -712,125 +673,23 @@ To connect to the PostgreSQL database from VSCode, follow these steps:
      ```
    - Save the results to separate CSV files named after each table (e.g., `table_name_columns.csv`).
      
-### 3. SQL Queries for Data Analysis
+### 2. SQL Queries for Data Analysis:
 
-1. **How Many Staff Are There in All of the UK Stores?**
-   - **SQL Query**:
-     ```sql
-     SELECT SUM(CAST("staff numbers" AS INTEGER)) AS total_staff
-FROM dim_stores
-WHERE "country_code" = 'GB'
-AND "staff numbers" IS NOT NULL;
-     ```
-   - **Export Result**: Save the result to `question_1.csv`.
-   - **Save Query**: Save the query to `question_1.sql`.
+   - The queries will be under the file structure:
 
-2. **Which Month in 2022 Had the Highest Revenue?**
-   - **SQL Query**:
-     ```sql
-   SELECT 
-    DATE_TRUNC('month', "Order Date"::DATE) AS month,  -- Truncate to month, cast to DATE if necessary
-    COUNT(*) AS total_revenue                          -- Use COUNT as a proxy if revenue column is missing
-FROM orders_powerbi
-WHERE EXTRACT(YEAR FROM "Order Date"::DATE) = 2022   -- Extract the year, cast to DATE if necessary
-GROUP BY month
-ORDER BY total_revenue DESC
-LIMIT 1;
-     ```
-   - **Export Result**: Save the result to `question_2.csv`.
-   - **Save Query**: Save the query to `question_2.sql`.
-
-3. **Which German Store Type Had the Highest Revenue for 2022?**
-   - **SQL Query**:
-     ```sql
-   -- Query to find the German store type with the highest revenue for 2022
-SELECT
-    ds.store_type,
-    SUM(ss.total_sales) AS total_revenue
-FROM store_sales_summary ss
-JOIN dim_stores ds
-    ON ds.store_type = ss.store_type  -- Join on store_type
-WHERE ds.country_code = 'DE'  -- Filter for Germany
-  AND ds.date_opened BETWEEN '2022-01-01' AND '2022-12-31'  -- Adjust if date_opened is in dim_stores
-GROUP BY ds.store_type
-ORDER BY total_revenue DESC
-LIMIT 1;
-     ```
-   - **Export Result**: Save the result to `question_3.csv`.
-   - **Save Query**: Save the query to `question_3.sql`.
-
-4. **Create a View for Store Sales Summary**
-   - **SQL Query**:
-     ```sql
-    CREATE VIEW store_type_summary AS
-WITH total_sales_summary AS (
-    SELECT
-        store_type,
-        SUM(total_sales) AS total_sales,
-        COUNT(*) AS orders_count
-    FROM store_sales_summary
-    GROUP BY store_type
-),
-overall_totals AS (
-    SELECT
-        SUM(total_sales) AS total_sales
-    FROM store_sales_summary
-)
-SELECT
-    t.store_type,
-    t.total_sales,
-    (t.total_sales / o.total_sales) * 100 AS pct_total_sales,
-    t.orders_count
-FROM total_sales_summary t
-JOIN overall_totals o
-ON true;
-     ```
-   - **Save Query**: Save the view creation statement to `question_4.sql`.
-
-5. **Which Product Category Generated the Most Profit for the "Wiltshire, UK" Region in 2021?**
-   - **SQL Query**:
-     ```sql
-- Query to find the product category with the most profit in Wiltshire, UK for 2021
-SELECT 
-    p.category AS product_category,
-    SUM(
-        (op."Product Quantity" * p.sale_price) - (op."Product Quantity" * p.cost_price)
-    ) AS total_profit
-FROM 
-    orders_powerbi op
-JOIN 
-    dim_products p
-    ON op."product_code" = p."product_code"
-JOIN 
-    dim_stores ds
-    ON op."Store Code" = ds."store code"
-WHERE 
-    ds.country_region = 'Wiltshire' 
-    AND ds.country_code = 'GB'
-    AND EXTRACT(YEAR FROM TO_DATE(op."Order Date", 'YYYY-MM-DD')) = 2021
-GROUP BY 
-    p.category
-ORDER BY 
-    total_profit DESC
-LIMIT 1;
-     ```
-   - **Export Result**: Save the result to `question_5.csv`.
-   - **Save Query**: Save the query to `question_5.sql`.
-
-## Files Included
-
-- **CSV Files**:
-  - `tables_names.csv`: List of all tables in the database.
-  - `orders_columns.csv`: Columns in the `orders` table.
-  - `question_1.csv`: Result for the number of staff in UK stores.
-  - `question_2.csv`: Result for the highest revenue month in 2022.
-  - `question_3.csv`: Result for the highest revenue German store type for 2022.
-  - 'question_4.csv' : Result for creating the store sales summary view
-  - `question_5.csv`: Result for the most profitable product category in Wiltshire, UK for 2021.
-
-- **SQL Files**:
-  - `question_1.sql`: SQL query for the number of staff in UK stores.
-  - `question_2.sql`: SQL query for the highest revenue month in 2022.
-  - `question_3.sql`: SQL query for the highest revenue German store type for 2022.
-  - `question_4.sql`: SQL query for creating the store sales summary view.
-  - `question_5.sql`: SQL query for the most profitable product category in Wiltshire, UK for 2021.
+     ## File Structure
+   - `tables_names.csv`
+   - `orders_columns.csv`
+   - `question_1.csv`
+   - `question_2.csv`
+   - `question_3.csv`
+   - `question_4.csv` 
+   - `question_5.csv`
+   - `question_1.sql`
+   - `question_2.sql`
+   - `question_3.sql`
+   - `question_4.sql`
+   - `question_5.sql`
+ 
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
